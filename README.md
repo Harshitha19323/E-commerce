@@ -10,23 +10,23 @@ A web-based application built with Streamlit that allows users to query their pr
 # ✨ Features
 
  
- # 1.Natural Language to SQL: 
+ 1.Natural Language to SQL: 
  
   Converts user questions (e.g., "Show me total sales for item_id 25") into executable SQLite queries.
 
-# 2.Local Data Integration:
+2.Local Data Integration:
 
    Connects to a local SQLite database (product_data.db) populated from your CSV datasets (Product-Level Eligibility, Total Sales, Ad Sales).
 
-# 3.Flexible LLM Backend:
+3.Flexible LLM Backend:
 
    Supports both local LLMs , cloud-based LLM APIs like Google Gemini.
 
-# 4.Interactive Web UI:
+4.Interactive Web UI:
 
    A simple and intuitive Streamlit interface for asking questions and viewing results.
 
-# 5.Modular Design:
+5.Modular Design:
 
    Structured into separate Python modules (llm.py, sql.py, agent.py, app.py) for maintainability and scalability.
 
