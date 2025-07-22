@@ -6,7 +6,8 @@ A web-based application built with Streamlit that allows users to query their pr
 
 > [🌐 Access sql Ecommerce agent](https://e-commerce-zderuxssw7tcefkbnsqtcd.streamlit.app/)
 > 
-
+## Detailed Explanation
+ https://docs.google.com/document/d/1DSH2DDm62_mE9UxEW9iwn6DRKLRaI3AFLTEmfnJP3Ic/edit?usp=sharing
 # ✨ Features
 
  
