@@ -9,15 +9,20 @@ A web-based application built with Streamlit that allows users to query their pr
 
 # ✨ Features
 
-1.Natural Language to SQL: Converts user questions (e.g., "Show me total sales for item_id 25") into executable SQLite queries.
+1.Natural Language to SQL: 
+                  Converts user questions (e.g., "Show me total sales for item_id 25") into executable SQLite queries.
 
-2.Local Data Integration: Connects to a local SQLite database (product_data.db) populated from your CSV datasets (Product-Level Eligibility, Total Sales, Ad Sales).
+2.Local Data Integration:
+                  Connects to a local SQLite database (product_data.db) populated from your CSV datasets (Product-Level Eligibility, Total Sales, Ad Sales).
 
-3.Flexible LLM Backend: Supports both local LLMs , cloud-based LLM APIs like Google Gemini.
+3.Flexible LLM Backend: 
+                  Supports both local LLMs , cloud-based LLM APIs like Google Gemini.
 
-4.Interactive Web UI: A simple and intuitive Streamlit interface for asking questions and viewing results.
+4.Interactive Web UI: 
+                  A simple and intuitive Streamlit interface for asking questions and viewing results.
 
-5.Modular Design: Structured into separate Python modules (llm.py, sql.py, agent.py, app.py) for maintainability and scalability.
+5.Modular Design: 
+                  Structured into separate Python modules (llm.py, sql.py, agent.py, app.py) for maintainability and scalability.
 
 
 # 🚀 Getting Started
@@ -44,7 +49,7 @@ pip install -r requirements.txt
 
 2. Set up your LLM API Key (if using Google Gemini):
    
-Create a file named .env in the root of your project directory and add your Google API key:
+      Create a file named .env in the root of your project directory and add your Google API key:
 
 ```bash
 # Set your Groq API Key
@@ -55,7 +60,7 @@ echo "GROQ_API_KEY=your-api-key-here" > .env
 3. ⚙ Setup & Run
 - Prepare your Database:
   
-Run the sql.py script once to download your CSV data from Google Sheets and populate the product_data.db SQLite database.
+     Run the sql.py script once to download your CSV data from Google Sheets and populate the product_data.db SQLite database.
 
 ```bash
 python sql.py
@@ -64,9 +69,7 @@ You should see messages about successful downloads and data imports.
 
 -  Start your LLM Service:
 
-If using Google Gemini API: 
- 
- No separate server is needed, but ensure you have an active internet connection and your GOOGLE_API_KEY is correctly set in .env.
+      If using Google Gemini API,No separate server is needed, but ensure you have an active internet connection and your GOOGLE_API_KEY is correctly set in .env.
 
 
 ```bash
@@ -75,7 +78,7 @@ python llm.py
 
 -  Run the Streamlit Application:
 
-Open a terminal, navigate to your project's root directory, and run the Streamlit app:
+   Open a terminal, navigate to your project's root directory, and run the Streamlit app:
 
 
 ```bash
