@@ -2,6 +2,15 @@
 
 A web-based application built with Streamlit that allows users to query their product data using natural language. Powered by a Large Language Model (LLM), this agent converts English questions into SQL queries, fetches results from a local SQLite database, and presents them in a human-readable format.
 
+## 🎥 Video Demo
+
+Watch the full demo of the project in action:
+
+🔗 [Click here to view the demo video](https://www.loom.com/share/a06f6a4ff55f42a79e899e1903e48412?sid=1925e3cf-e972-42c6-a9aa-e978a8019264)
+
+---
+
+
 ## 🚀 Live App
 
 > [🌐 Access sql Ecommerce agent](https://e-commerce-zderuxssw7tcefkbnsqtcd.streamlit.app/)
