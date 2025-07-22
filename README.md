@@ -24,26 +24,29 @@ Follow these steps to set up and run the AI SQL Agent on your local machine.
 
 # 📦 Installation
 
->> Install Python dependencies:
+Install Python dependencies:
+
 pip install -r requirements.txt
 
 (If you don't have requirements.txt, manually install: pip install streamlit fastapi uvicorn requests python-dotenv google-generativeai)
 
->> Set up your LLM API Key (if using Google Gemini):
+Set up your LLM API Key (if using Google Gemini):
 Create a file named .env in the root of your project directory and add your Google API key:
 
 # .env
+
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY_HERE"
 
 ⚙ Setup & Run
->> Prepare your Database:
+Prepare your Database:
+
 Run the sql.py script once to download your CSV data from Google Sheets and populate the product_data.db SQLite database.
 
 python sql.py
 
 You should see messages about successful downloads and data imports.
 
->> Start your LLM Service:
+Start your LLM Service:
 
 Local LLM: Open a separate terminal window and start your chosen model--gemini-2.5-pro. Keep this terminal running.
 
@@ -57,9 +60,12 @@ streamlit run app.py
 
 This will open the application in your web browser, usually at http://localhost:8501/.
 
-📂 Project Structure
+
+# 📂 Project Structure
+
 E-commerce-agent/
-├── app.py              # Streamlit web interface
+├── app.py      
+                              # Streamlit web interface
 ├── agent.py            # Core AI agent logic (orchestrates LLM and DB)
 ├── llm.py              # LLM service (handles communication with Gemini API)
 ├── sql.py              # Database service (handles SQLite connection, table creation, CSV import)
@@ -70,14 +76,17 @@ E-commerce-agent/
 ├── product_total_sales.csv  # (Temporary, downloaded by sql.py)
 └── product_ad_sales.csv     # (Temporary, downloaded by sql.py)
 
-📚 Dependencies
+# 📚 Dependencies
+
 The main dependencies are listed in requirements.txt:
 
 streamlit
+
 python-dotenv
+
 requests
-fastapi
-uvicorn
+
 google-generativeai # Only if using Google Gemini API
+
 #sqlite3 is built-in with Python
 
