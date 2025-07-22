@@ -19,19 +19,17 @@ A web-based application built with Streamlit that allows users to query their pr
 # 🚀 Getting Started
 Follow these steps to set up and run the AI SQL Agent on your local machine.
 
----
+
 # ✅ Prerequisites
 
--Python 3.8+
--Git
--For Google Gemini API: A Google AI Studio API Key.
+- Python 3.8+
+- Git
+- Google API key: A Google AI Studio API Key.
 - (Optional) Streamlit Community Cloud account for deployment
 
 ---
-
 # 📦 Installation
 
----
 
 1. Install Python dependencies:
 
@@ -41,6 +39,7 @@ pip install -r requirements.txt
 
 
 2. Set up your LLM API Key (if using Google Gemini):
+   
 Create a file named .env in the root of your project directory and add your Google API key:
 
 ```bash
@@ -50,7 +49,8 @@ echo "GROQ_API_KEY=your-api-key-here" > .env
 
 
 3. ⚙ Setup & Run
--Prepare your Database:
+- Prepare your Database:
+  
 Run the sql.py script once to download your CSV data from Google Sheets and populate the product_data.db SQLite database.
 
 ```bash
@@ -58,16 +58,18 @@ python sql.py
 ```
 You should see messages about successful downloads and data imports.
 
--Start your LLM Service:
+-  Start your LLM Service:
 
-If using Google Gemini API: No separate server is needed, but ensure you have an active internet connection and your GOOGLE_API_KEY is correctly set in .env.
+If using Google Gemini API: 
+ 
+ No separate server is needed, but ensure you have an active internet connection and your GOOGLE_API_KEY is correctly set in .env.
 
 
 ```bash
 python llm.py
 ```
 
--Run the Streamlit Application:
+-  Run the Streamlit Application:
 
 Open a terminal, navigate to your project's root directory, and run the Streamlit app:
 
