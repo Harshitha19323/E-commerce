@@ -11,36 +11,27 @@ A web-based application built with Streamlit that allows users to query their pr
 
  
  # 1.Natural Language to SQL: 
-                  Converts user questions (e.g., "Show me total sales for item_id 25") into executable SQLite queries.
+ 
+  Converts user questions (e.g., "Show me total sales for item_id 25") into executable SQLite queries.
 
 # 2.Local Data Integration:
-                  Connects to a local SQLite database (product_data.db) populated from your CSV datasets (Product-Level Eligibility, Total Sales, Ad Sales).
 
-# 3.Flexible LLM Backend: 
-                  Supports both local LLMs , cloud-based LLM APIs like Google Gemini.
+   Connects to a local SQLite database (product_data.db) populated from your CSV datasets (Product-Level Eligibility, Total Sales, Ad Sales).
 
-# 4.Interactive Web UI: 
-                  A simple and intuitive Streamlit interface for asking questions and viewing results.
+# 3.Flexible LLM Backend:
 
-# 5.Modular Design: 
-                  Structured into separate Python modules (llm.py, sql.py, agent.py, app.py) for maintainability and scalability.
+   Supports both local LLMs , cloud-based LLM APIs like Google Gemini.
 
+# 4.Interactive Web UI:
 
-### 📊 Dashboard
-- Displays key metrics related to your Product Data and the agent's activity, providing insights at a glance:
+   A simple and intuitive Streamlit interface for asking questions and viewing results.
 
-  Total number of products in the database
-      
-  Overall total sales recorded
-      
-  Number of unique product queries made
-      
-  Average sales value per query
-      
-  Top 5 most frequently queried product categories/items
+# 5.Modular Design:
+
+   Structured into separate Python modules (llm.py, sql.py, agent.py, app.py) for maintainability and scalability.
 
 
-![Dashboard](assets/dashboard.png)
+
 
 # 🚀 Getting Started
 Follow these steps to set up and run the AI SQL Agent on your local machine.
